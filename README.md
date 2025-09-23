@@ -21,6 +21,21 @@ Welcome to the Head of Engineering Challenge Workshop. This event has been pulle
 - **Level 4-6**: Intermediate challenges (Legacy modernization, business logic, security)
 - **Level 7-10**: Advanced challenges (Performance, testing, architecture, production deployment)
 
+#### Challenge Table
+
+| Challenge Name | Difficulty Level |
+|----------------|------------------|
+| [PDF to Digital Service Transformation](level-01.md) | Level 1 |
+| [Data Processing & Visualisation](level-02.md) | Level 2 |
+| [Database-Backed CRUD Operations](level-03.md) | Level 3 |
+| [Legacy Code Modernisation](level-04.md) | Level 4 |
+| [Complex Business Logic Implementation](level-05.md) | Level 5 |
+| [Security Vulnerability Assessment & Remediation](level-06.md) | Level 6 |
+| [Performance Investigation & System Resilience](level-07.md) | Level 7 |
+| [Adaptive Testing Strategy & Risk-Based Quality Engineering](level-08.md) | Level 8 |
+| [Multi-Service Architecture Design](level-09.md) | Level 9 |
+| [Production Deployment & Incident Response](level-10.md) | Level 10 |
+
 
 ## Workshop Schedule
 
@@ -29,11 +44,10 @@ Welcome to the Head of Engineering Challenge Workshop. This event has been pulle
 | Time | Session | Summary |
 |------|---------|---------|
 | 09:00-09:30 | Optional AI Clinic | Optional support session for tooling setup, challenge selection guidance, and individual help getting started |
-| 09:30-10:00 | Challenge Kick-Off | Introduction to 10-level challenge system, scoring explained, overview of available challenges, AI tools and prompting best practices refresher |
-| 10:00-12:30 | Challenge Sprint 1 | Individual hands-on development working through selected challenges (Levels 1-10), facilitator support available, focus on practical implementation |
+| 09:30-10:15 | Challenge Kick-Off | Introduction to 10-level challenge system, scoring explained, overview of available challenges, AI tools and prompting best practices refresher |
+| 10:15-12:30 | Challenge Sprint 1 | Individual hands-on development working through selected challenges (Levels 1-10), facilitator support available, focus on practical implementation |
 | 12:30-13:30 | Lunch | Working lunch with informal discussions, peer support and knowledge sharing encouraged |
-| 13:30-14:00 | Lessons Learnt from Productionising AI | Discussion led by Version 1 and CAFCASS example |
-| 14:00-15:30 | Challenge Sprint 2 | Final development push, challenge completion and documentation, consolidation of learning and insights |
+| 13:30-15:30 | Challenge Sprint 2 | Final development push, challenge completion and documentation, consolidation of learning and insights |
 | 15:30-16:15 | Group Feedback & Scoreboard Review | Collaborative discussion on tool effectiveness, successful approaches, prompting strategies, key insights, challenge completion scoring, and peer recognition with awards |
 | 16:15-16:30 | Wrap-Up & Next Steps | Summary of collective learnings, resources for continued development, event conclusion |
 
