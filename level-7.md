@@ -59,9 +59,11 @@ Modern government digital services exhibit performance problems that require sop
 
 ## Source Materials: Community Centre Booking System Performance Incident
 
-**Investigation Materials Repository:** see the ```performance-challenge``` directory in this repo for everything you need.
+**Investigation Materials Repository:** `performance-challenge/`
 
-You will work with comprehensive performance investigation materials from a realistic government service outage representing common performance challenges found in local government digital services.
+See the `performance-challenge/` directory in this repo for everything you need.
+
+You will work with comprehensive performance investigation materials from a realistic government service outage representing common performance challenges found in local government digital services. The `performance-challenge/` folder contains all the data and materials needed for this investigation.
 
 ### Service Context
 - **Local Council Community Centre Booking System:** Online booking for community centres, sports halls, and meeting rooms
@@ -71,12 +73,27 @@ You will work with comprehensive performance investigation materials from a real
 - **Surface symptoms:** Database connection exhaustion, memory pressure, CPU spikes - typical scaling problem indicators
 
 ### Investigation Materials Available
-- **Application server logs:** Performance degradation patterns, error traces, and system resource warnings
-- **Database performance logs:** Query execution times, connection pool metrics, and resource contention indicators
-- **Infrastructure monitoring data:** CPU, memory, network, and response time metrics with 5-minute granularity
-- **Citizen service desk tickets:** Impact reports and complaint patterns correlated with the technical incident
-- **Load balancer access logs:** Request patterns, response codes, and user behavior during the incident
-- **Application metrics:** Booking success rates, search performance, and feature usage patterns during degradation
+
+The `performance-challenge/` folder contains all materials needed for investigation:
+
+#### Log Files (`performance-challenge/logs/`)
+- **`app.log`** - Application server logs with performance degradation patterns, error traces, and system resource warnings
+- **`db.log`** - Database performance logs with query execution times, connection pool metrics, and resource contention indicators
+- **`access.log`** - Load balancer access logs showing request patterns, response codes, and user behavior during the incident
+
+#### Monitoring Data (`performance-challenge/monitoring/`)
+- **`metrics.csv`** - Infrastructure monitoring data with CPU, memory, network, and response time metrics (5-minute intervals)
+- **`dashboard-data.json`** - Application performance metrics including booking success rates, search performance, and feature usage patterns
+- **`alerts.json`** - System alerts triggered during the incident timeline
+
+#### Citizen Impact Data (`performance-challenge/citizen-impact/`)
+- **`service-desk-tickets.json`** - Customer service tickets with citizen complaints and impact reports correlated with the technical incident
+- **`social-media-mentions.txt`** - Social media monitoring report showing public response to service issues
+
+#### Complete Incident Summary (`performance-challenge/README.md`)
+- Detailed timeline of the 5-hour outage (09:00 AM - 2:00 PM, January 15th, 2025)
+- Key metrics summary showing performance degradation progression
+- Service context and operational information
 
 ### Performance Investigation Challenge
 The incident materials contain **multiple red herrings** that suggest obvious scaling solutions (more servers, larger connection pools, additional memory) but hide a **subtle root cause** that requires systematic AI-assisted analysis to discover. The true issue is non-obvious and would not be resolved by traditional infrastructure scaling approaches.
@@ -134,12 +151,18 @@ for government service reliability improvement."
 Once you understand your investigation approach, systematically analyse the incident materials:
 
 ```
-"You are conducting comprehensive performance forensics on a government digital service 
-incident using these investigation materials from: https://github.com/stevewalton28/ai-native-performance-exercise/tree/main
+"You are conducting comprehensive performance forensics on a government digital service
+incident using the investigation materials in the `performance-challenge/` folder.
 
-This is a Local Council Community Centre Booking System that experienced significant 
-performance degradation on Monday 15th January 2025, 9:00 AM - 2:00 PM, with page 
+This is a Local Council Community Centre Booking System that experienced significant
+performance degradation on Monday 15th January 2025, 9:00 AM - 2:00 PM, with page
 load times increasing from 2 seconds to 45+ seconds and widespread booking failures.
+
+Use the complete dataset available in:
+- `performance-challenge/logs/` - Application, database, and access logs
+- `performance-challenge/monitoring/` - Infrastructure metrics, dashboard data, and alerts
+- `performance-challenge/citizen-impact/` - Service desk tickets and social media reports
+- `performance-challenge/README.md` - Complete incident timeline and context
 
 PERFORMANCE INVESTIGATION REQUIREMENTS:
 Systematically analyse all provided incident materials to identify:
@@ -249,24 +272,30 @@ This approach creates executable specifications for performance investigation an
 **Phase 1: Performance Investigation Specification (/specify)**
 
 ```
-/specify Conduct comprehensive performance forensics on a government digital service incident, 
-identifying the true root cause through systematic analysis of multiple data sources and 
+/specify Conduct comprehensive performance forensics on a government digital service incident,
+identifying the true root cause through systematic analysis of multiple data sources and
 designing proactive monitoring architecture that prevents similar performance failures.
 
+Use the complete investigation materials in the `performance-challenge/` folder:
+- Application logs, database logs, and access logs in `performance-challenge/logs/`
+- Infrastructure monitoring data and alerts in `performance-challenge/monitoring/`
+- Citizen impact data in `performance-challenge/citizen-impact/`
+- Complete incident timeline in `performance-challenge/README.md`
+
 The investigation must address:
-- Complex performance incident with non-obvious root cause requiring systematic analysis 
+- Complex performance incident with non-obvious root cause requiring systematic analysis
   of application logs, database performance, infrastructure metrics, and citizen impact data
-- Root cause identification that goes beyond surface symptoms to identify actual technical 
+- Root cause identification that goes beyond surface symptoms to identify actual technical
   bottlenecks and system inefficiencies causing citizen service disruption
-- Comprehensive monitoring architecture design enabling proactive detection of similar 
+- Comprehensive monitoring architecture design enabling proactive detection of similar
   performance issues before they impact government digital service availability
-- Systematic resilience improvements preventing this class of performance failure across 
+- Systematic resilience improvements preventing this class of performance failure across
   different government digital services and operational contexts
-- Investigation methodology that can be applied across government departments for consistent 
+- Investigation methodology that can be applied across government departments for consistent
   incident response and performance management approaches
 
-Government operational teams currently struggle to rapidly identify performance issue root 
-causes, leading to extended incident resolution times and repeated performance failures 
+Government operational teams currently struggle to rapidly identify performance issue root
+causes, leading to extended incident resolution times and repeated performance failures
 that impact citizen service accessibility and government service reliability.
 ```
 
