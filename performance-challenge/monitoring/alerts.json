@@ -1,0 +1,262 @@
+[
+  {
+    "alert_id": "ALT-2025-0115-001",
+    "timestamp": "2025-01-15T09:00:47Z",
+    "severity": "warning",
+    "source": "database_monitor",
+    "metric": "query_execution_time",
+    "title": "Slow Query Detected",
+    "description": "Database query execution time exceeded warning threshold",
+    "details": {
+      "query_time_ms": 1823,
+      "threshold_ms": 1000,
+      "query_type": "facility_search",
+      "affected_table": "time_slots"
+    },
+    "status": "acknowledged",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-002",
+    "timestamp": "2025-01-15T09:15:36Z",
+    "severity": "warning",
+    "source": "application_monitor",
+    "metric": "response_time",
+    "title": "API Response Time Degraded",
+    "description": "Search API response time exceeded warning threshold",
+    "details": {
+      "response_time_ms": 3222,
+      "threshold_ms": 2000,
+      "endpoint": "/api/facilities/search",
+      "request_count_last_5min": 23
+    },
+    "status": "acknowledged",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-003",
+    "timestamp": "2025-01-15T09:26:12Z",
+    "severity": "critical",
+    "source": "database_monitor",
+    "metric": "query_execution_time",
+    "title": "Critical Query Performance",
+    "description": "Database query execution time critically high - potential table scan detected",
+    "details": {
+      "query_time_ms": 15601,
+      "threshold_ms": 10000,
+      "query_type": "facility_search",
+      "scan_type": "potential_full_table_scan",
+      "rows_examined": 125847
+    },
+    "status": "open",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-004",
+    "timestamp": "2025-01-15T09:30:45Z",
+    "severity": "warning",
+    "source": "application_monitor",
+    "metric": "booking_success_rate",
+    "title": "Booking Success Rate Declining",
+    "description": "Booking completion success rate below warning threshold",
+    "details": {
+      "success_rate_percent": 92.6,
+      "threshold_percent": 95.0,
+      "failed_bookings_last_5min": 7,
+      "total_attempts_last_5min": 95
+    },
+    "status": "open",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-005",
+    "timestamp": "2025-01-15T09:45:58Z",
+    "severity": "critical",
+    "source": "database_monitor",
+    "metric": "connection_pool",
+    "title": "Database Connection Pool Stress",
+    "description": "Thread starvation detected in database connection pool",
+    "details": {
+      "pool_utilization_percent": 100,
+      "active_connections": 10,
+      "waiting_connections": 3,
+      "longest_wait_time_ms": 25123
+    },
+    "status": "open",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-006",
+    "timestamp": "2025-01-15T10:06:18Z",
+    "severity": "critical",
+    "source": "application_monitor",
+    "metric": "query_timeout",
+    "title": "Database Query Timeouts",
+    "description": "Multiple database queries timing out due to performance issues",
+    "details": {
+      "timeout_count_last_5min": 3,
+      "timeout_threshold_ms": 30000,
+      "affected_endpoints": ["/api/facilities/search"],
+      "error_rate_percent": 34.7
+    },
+    "status": "open",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-007",
+    "timestamp": "2025-01-15T10:35:12Z",
+    "severity": "critical",
+    "source": "database_monitor",
+    "metric": "connection_pool_exhaustion",
+    "title": "Database Connection Pool Exhausted",
+    "description": "All database connections in use - new requests timing out",
+    "details": {
+      "active_connections": 10,
+      "max_connections": 10,
+      "waiting_requests": 15,
+      "connection_wait_timeout_ms": 30000
+    },
+    "status": "open",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-008",
+    "timestamp": "2025-01-15T11:00:12Z",
+    "severity": "critical",
+    "source": "application_monitor",
+    "metric": "booking_success_rate",
+    "title": "Booking Success Rate Critical",
+    "description": "Booking success rate critically low - service effectively unavailable",
+    "details": {
+      "success_rate_percent": 3.1,
+      "threshold_percent": 85.0,
+      "failed_bookings_last_5min": 47,
+      "total_attempts_last_5min": 48
+    },
+    "status": "open",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-009",
+    "timestamp": "2025-01-15T11:20:12Z",
+    "severity": "critical",
+    "source": "infrastructure_monitor",
+    "metric": "system_performance",
+    "title": "System Performance Critically Degraded",
+    "description": "Overall system performance metrics indicate critical service degradation",
+    "details": {
+      "cpu_utilization_percent": 99.9,
+      "memory_utilization_percent": 99.9,
+      "average_response_time_ms": 42300,
+      "error_rate_percent": 96.9,
+      "active_db_connections": 10,
+      "waiting_db_connections": 142
+    },
+    "status": "escalated",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-010",
+    "timestamp": "2025-01-15T11:30:34Z",
+    "severity": "warning",
+    "source": "infrastructure_monitor",
+    "metric": "memory_usage",
+    "title": "High Memory Usage and GC Pressure",
+    "description": "Application memory usage high with frequent garbage collection cycles",
+    "details": {
+      "heap_utilization_percent": 85.7,
+      "heap_used_gb": 3.4,
+      "heap_max_gb": 4.0,
+      "gc_frequency_per_min": 31,
+      "full_gc_events_last_5min": 12
+    },
+    "status": "acknowledged",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-011",
+    "timestamp": "2025-01-15T12:00:34Z",
+    "severity": "critical",
+    "source": "service_monitor",
+    "metric": "service_availability",
+    "title": "Service Availability Critical - Extended Outage",
+    "description": "Critical service availability alert - system unavailable for extended period",
+    "details": {
+      "outage_duration_minutes": 90,
+      "availability_percent": 5.2,
+      "affected_users_estimated": 1200,
+      "sla_breach": true,
+      "escalation_required": true
+    },
+    "status": "escalated",
+    "auto_resolved": false
+  },
+  {
+    "alert_id": "ALT-2025-0115-012",
+    "timestamp": "2025-01-15T12:20:17Z",
+    "severity": "info",
+    "source": "database_monitor",
+    "metric": "connection_pool",
+    "title": "Database Connection Pool Restarted",
+    "description": "Database connection pool successfully restarted with increased capacity",
+    "details": {
+      "old_pool_size": 10,
+      "new_pool_size": 15,
+      "restart_reason": "manual_intervention",
+      "restart_duration_seconds": 8
+    },
+    "status": "resolved",
+    "auto_resolved": true
+  },
+  {
+    "alert_id": "ALT-2025-0115-013",
+    "timestamp": "2025-01-15T13:00:09Z",
+    "severity": "info",
+    "source": "application_monitor",
+    "metric": "performance_recovery",
+    "title": "Performance Metrics Improving",
+    "description": "System performance metrics showing improvement trend",
+    "details": {
+      "average_response_time_ms": 8200,
+      "error_rate_percent": 12.0,
+      "booking_success_rate_percent": 88.7,
+      "trend": "improving"
+    },
+    "status": "resolved",
+    "auto_resolved": true
+  },
+  {
+    "alert_id": "ALT-2025-0115-014",
+    "timestamp": "2025-01-15T13:45:48Z",
+    "severity": "info",
+    "source": "application_monitor",
+    "metric": "performance_normalized",
+    "title": "Performance Metrics Normalized",
+    "description": "All performance metrics have returned to normal operating ranges",
+    "details": {
+      "average_response_time_ms": 1200,
+      "error_rate_percent": 1.0,
+      "booking_success_rate_percent": 98.1,
+      "database_pool_utilization_percent": 20
+    },
+    "status": "resolved",
+    "auto_resolved": true
+  },
+  {
+    "alert_id": "ALT-2025-0115-015",
+    "timestamp": "2025-01-15T14:00:10Z",
+    "severity": "info",
+    "source": "service_monitor",
+    "metric": "service_recovery",
+    "title": "Service Fully Recovered",
+    "description": "Community booking service has fully recovered from performance incident",
+    "details": {
+      "total_outage_duration_minutes": 300,
+      "recovery_time": "2025-01-15T13:45:00Z",
+      "final_availability_percent": 99.2,
+      "sla_impact_assessment": "required"
+    },
+    "status": "resolved",
+    "auto_resolved": true
+  }
+]

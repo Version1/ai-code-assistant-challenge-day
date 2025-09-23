@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vulnerable App - Search</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        input, button { padding: 10px; margin: 5px 0; }
+        .search-form { margin: 20px 0; }
+        .results { background: #f9f9f9; padding: 20px; margin: 20px 0; }
+        .nav { margin: 20px 0; }
+        .nav a { margin-right: 15px; text-decoration: none; }
+        .vulnerability-note { background: #ffe6e6; padding: 10px; margin: 10px 0; border: 1px solid #ff9999; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search</h1>
+        
+        <div class="nav">
+            <a href="/">Login</a>
+            <a href="/register">Register</a>
+            <a href="/search">Search</a>
+            <a href="/upload">Upload</a>
+            <a href="/logout">Logout</a>
+        </div>
+
+        <div class="search-form">
+            <form method="GET" action="/search">
+                <input type="text" name="q" value="{{ query }}" placeholder="Search..." style="width: 70%;">
+                <button type="submit" style="width: 25%;">Search</button>
+            </form>
+        </div>
+
+        {% if query %}
+        <div class="results">
+            <h3>Search Results for: {{ query|safe }}</h3>
+            {% for result in results %}
+                <p>{{ result|safe }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="vulnerability-note">
+            <strong>XSS Vulnerability:</strong> User input is not escaped!
+            <br>Try searching for: <code>&lt;script&gt;alert('XSS')&lt;/script&gt;</code>
+            <br>Or: <code>&lt;img src=x onerror=alert('XSS')&gt;</code>
+        </div>
+    </div>
+</body>
+</html>

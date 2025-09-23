@@ -1,0 +1,367 @@
+{
+  "dashboard_name": "Community Booking System Performance",
+  "collection_period": {
+    "start": "2025-01-15T08:00:00Z",
+    "end": "2025-01-15T14:15:00Z",
+    "interval_minutes": 5
+  },
+  "metrics": {
+    "booking_success_rate": {
+      "description": "Percentage of successful booking completions",
+      "unit": "percentage",
+      "threshold_warning": 95,
+      "threshold_critical": 85,
+      "data_points": [
+        {"timestamp": "2025-01-15T08:00:00Z", "value": 99.8},
+        {"timestamp": "2025-01-15T08:30:00Z", "value": 99.5},
+        {"timestamp": "2025-01-15T09:00:00Z", "value": 98.2},
+        {"timestamp": "2025-01-15T09:15:00Z", "value": 96.5},
+        {"timestamp": "2025-01-15T09:30:00Z", "value": 92.6},
+        {"timestamp": "2025-01-15T09:45:00Z", "value": 84.2},
+        {"timestamp": "2025-01-15T10:00:00Z", "value": 70.9},
+        {"timestamp": "2025-01-15T10:15:00Z", "value": 53.2},
+        {"timestamp": "2025-01-15T10:30:00Z", "value": 32.7},
+        {"timestamp": "2025-01-15T10:45:00Z", "value": 13.3},
+        {"timestamp": "2025-01-15T11:00:00Z", "value": 3.1},
+        {"timestamp": "2025-01-15T11:15:00Z", "value": 0.4},
+        {"timestamp": "2025-01-15T11:30:00Z", "value": 0.2},
+        {"timestamp": "2025-01-15T11:45:00Z", "value": 0.1},
+        {"timestamp": "2025-01-15T12:00:00Z", "value": 0.1},
+        {"timestamp": "2025-01-15T12:15:00Z", "value": 0.1},
+        {"timestamp": "2025-01-15T12:30:00Z", "value": 54.3},
+        {"timestamp": "2025-01-15T12:45:00Z", "value": 75.8},
+        {"timestamp": "2025-01-15T13:00:00Z", "value": 88.7},
+        {"timestamp": "2025-01-15T13:15:00Z", "value": 94.2},
+        {"timestamp": "2025-01-15T13:30:00Z", "value": 96.8},
+        {"timestamp": "2025-01-15T13:45:00Z", "value": 98.1},
+        {"timestamp": "2025-01-15T14:00:00Z", "value": 99.2}
+      ]
+    },
+    "search_response_time": {
+      "description": "Average response time for facility search queries",
+      "unit": "milliseconds",
+      "threshold_warning": 2000,
+      "threshold_critical": 5000,
+      "data_points": [
+        {"timestamp": "2025-01-15T08:00:00Z", "value": 167},
+        {"timestamp": "2025-01-15T08:30:00Z", "value": 234},
+        {"timestamp": "2025-01-15T09:00:00Z", "value": 1889},
+        {"timestamp": "2025-01-15T09:15:00Z", "value": 3222},
+        {"timestamp": "2025-01-15T09:30:00Z", "value": 7834},
+        {"timestamp": "2025-01-15T09:45:00Z", "value": 15666},
+        {"timestamp": "2025-01-15T10:00:00Z", "value": 25111},
+        {"timestamp": "2025-01-15T10:15:00Z", "value": 32666},
+        {"timestamp": "2025-01-15T10:30:00Z", "value": 38111},
+        {"timestamp": "2025-01-15T10:45:00Z", "value": 44333},
+        {"timestamp": "2025-01-15T11:00:00Z", "value": 30000},
+        {"timestamp": "2025-01-15T11:15:00Z", "value": 30000},
+        {"timestamp": "2025-01-15T11:30:00Z", "value": 30000},
+        {"timestamp": "2025-01-15T11:45:00Z", "value": 30000},
+        {"timestamp": "2025-01-15T12:00:00Z", "value": 30000},
+        {"timestamp": "2025-01-15T12:15:00Z", "value": 30000},
+        {"timestamp": "2025-01-15T12:30:00Z", "value": 8234},
+        {"timestamp": "2025-01-15T12:45:00Z", "value": 12111},
+        {"timestamp": "2025-01-15T13:00:00Z", "value": 5111},
+        {"timestamp": "2025-01-15T13:15:00Z", "value": 3111},
+        {"timestamp": "2025-01-15T13:30:00Z", "value": 2111},
+        {"timestamp": "2025-01-15T13:45:00Z", "value": 1234},
+        {"timestamp": "2025-01-15T14:00:00Z", "value": 177}
+      ]
+    },
+    "payment_processing_time": {
+      "description": "Average time to process booking payments",
+      "unit": "milliseconds",
+      "threshold_warning": 1000,
+      "threshold_critical": 3000,
+      "data_points": [
+        {"timestamp": "2025-01-15T08:00:00Z", "value": 234},
+        {"timestamp": "2025-01-15T08:30:00Z", "value": 323},
+        {"timestamp": "2025-01-15T09:00:00Z", "value": 377},
+        {"timestamp": "2025-01-15T09:15:00Z", "value": 445},
+        {"timestamp": "2025-01-15T09:30:00Z", "value": 523},
+        {"timestamp": "2025-01-15T09:45:00Z", "value": 612},
+        {"timestamp": "2025-01-15T10:00:00Z", "value": 333},
+        {"timestamp": "2025-01-15T10:15:00Z", "value": 445},
+        {"timestamp": "2025-01-15T10:30:00Z", "value": 333},
+        {"timestamp": "2025-01-15T10:45:00Z", "value": 333},
+        {"timestamp": "2025-01-15T11:00:00Z", "value": null},
+        {"timestamp": "2025-01-15T11:15:00Z", "value": null},
+        {"timestamp": "2025-01-15T11:30:00Z", "value": null},
+        {"timestamp": "2025-01-15T11:45:00Z", "value": null},
+        {"timestamp": "2025-01-15T12:00:00Z", "value": null},
+        {"timestamp": "2025-01-15T12:15:00Z", "value": null},
+        {"timestamp": "2025-01-15T12:30:00Z", "value": 334},
+        {"timestamp": "2025-01-15T12:45:00Z", "value": 356},
+        {"timestamp": "2025-01-15T13:00:00Z", "value": 333},
+        {"timestamp": "2025-01-15T13:15:00Z", "value": 333},
+        {"timestamp": "2025-01-15T13:30:00Z", "value": 333},
+        {"timestamp": "2025-01-15T13:45:00Z", "value": 289},
+        {"timestamp": "2025-01-15T14:00:00Z", "value": 267}
+      ]
+    },
+    "session_management": {
+      "description": "Active user sessions and session timeout rate",
+      "metrics": {
+        "active_sessions": {
+          "unit": "count",
+          "data_points": [
+            {"timestamp": "2025-01-15T08:00:00Z", "value": 23},
+            {"timestamp": "2025-01-15T08:30:00Z", "value": 42},
+            {"timestamp": "2025-01-15T09:00:00Z", "value": 78},
+            {"timestamp": "2025-01-15T09:15:00Z", "value": 124},
+            {"timestamp": "2025-01-15T09:30:00Z", "value": 189},
+            {"timestamp": "2025-01-15T09:45:00Z", "value": 267},
+            {"timestamp": "2025-01-15T10:00:00Z", "value": 334},
+            {"timestamp": "2025-01-15T10:15:00Z", "value": 398},
+            {"timestamp": "2025-01-15T10:30:00Z", "value": 445},
+            {"timestamp": "2025-01-15T10:45:00Z", "value": 478},
+            {"timestamp": "2025-01-15T11:00:00Z", "value": 489},
+            {"timestamp": "2025-01-15T11:15:00Z", "value": 467},
+            {"timestamp": "2025-01-15T11:30:00Z", "value": 423},
+            {"timestamp": "2025-01-15T11:45:00Z", "value": 378},
+            {"timestamp": "2025-01-15T12:00:00Z", "value": 334},
+            {"timestamp": "2025-01-15T12:15:00Z", "value": 289},
+            {"timestamp": "2025-01-15T12:30:00Z", "value": 267},
+            {"timestamp": "2025-01-15T12:45:00Z", "value": 245},
+            {"timestamp": "2025-01-15T13:00:00Z", "value": 223},
+            {"timestamp": "2025-01-15T13:15:00Z", "value": 198},
+            {"timestamp": "2025-01-15T13:30:00Z", "value": 178},
+            {"timestamp": "2025-01-15T13:45:00Z", "value": 156},
+            {"timestamp": "2025-01-15T14:00:00Z", "value": 134}
+          ]
+        },
+        "session_timeout_rate": {
+          "unit": "percentage",
+          "threshold_warning": 5,
+          "threshold_critical": 10,
+          "data_points": [
+            {"timestamp": "2025-01-15T08:00:00Z", "value": 1.2},
+            {"timestamp": "2025-01-15T08:30:00Z", "value": 2.1},
+            {"timestamp": "2025-01-15T09:00:00Z", "value": 3.4},
+            {"timestamp": "2025-01-15T09:15:00Z", "value": 5.8},
+            {"timestamp": "2025-01-15T09:30:00Z", "value": 8.9},
+            {"timestamp": "2025-01-15T09:45:00Z", "value": 12.7},
+            {"timestamp": "2025-01-15T10:00:00Z", "value": 18.4},
+            {"timestamp": "2025-01-15T10:15:00Z", "value": 25.6},
+            {"timestamp": "2025-01-15T10:30:00Z", "value": 34.2},
+            {"timestamp": "2025-01-15T10:45:00Z", "value": 43.8},
+            {"timestamp": "2025-01-15T11:00:00Z", "value": 54.7},
+            {"timestamp": "2025-01-15T11:15:00Z", "value": 67.3},
+            {"timestamp": "2025-01-15T11:30:00Z", "value": 78.9},
+            {"timestamp": "2025-01-15T11:45:00Z", "value": 87.2},
+            {"timestamp": "2025-01-15T12:00:00Z", "value": 92.1},
+            {"timestamp": "2025-01-15T12:15:00Z", "value": 89.4},
+            {"timestamp": "2025-01-15T12:30:00Z", "value": 67.8},
+            {"timestamp": "2025-01-15T12:45:00Z", "value": 45.2},
+            {"timestamp": "2025-01-15T13:00:00Z", "value": 28.7},
+            {"timestamp": "2025-01-15T13:15:00Z", "value": 16.3},
+            {"timestamp": "2025-01-15T13:30:00Z", "value": 9.1},
+            {"timestamp": "2025-01-15T13:45:00Z", "value": 4.8},
+            {"timestamp": "2025-01-15T14:00:00Z", "value": 2.3}
+          ]
+        }
+      }
+    },
+    "cache_performance": {
+      "description": "Cache hit rates and cache efficiency metrics",
+      "metrics": {
+        "facility_cache_hit_rate": {
+          "unit": "percentage",
+          "threshold_warning": 85,
+          "threshold_critical": 70,
+          "data_points": [
+            {"timestamp": "2025-01-15T08:00:00Z", "value": 94.5},
+            {"timestamp": "2025-01-15T08:30:00Z", "value": 92.8},
+            {"timestamp": "2025-01-15T09:00:00Z", "value": 89.2},
+            {"timestamp": "2025-01-15T09:15:00Z", "value": 84.2},
+            {"timestamp": "2025-01-15T09:30:00Z", "value": 76.8},
+            {"timestamp": "2025-01-15T09:45:00Z", "value": 64.5},
+            {"timestamp": "2025-01-15T10:00:00Z", "value": 52.7},
+            {"timestamp": "2025-01-15T10:15:00Z", "value": 38.2},
+            {"timestamp": "2025-01-15T10:30:00Z", "value": 22.9},
+            {"timestamp": "2025-01-15T10:45:00Z", "value": 8.7},
+            {"timestamp": "2025-01-15T11:00:00Z", "value": 1.8},
+            {"timestamp": "2025-01-15T11:15:00Z", "value": 0.4},
+            {"timestamp": "2025-01-15T11:30:00Z", "value": 0.2},
+            {"timestamp": "2025-01-15T11:45:00Z", "value": 0.1},
+            {"timestamp": "2025-01-15T12:00:00Z", "value": 0.1},
+            {"timestamp": "2025-01-15T12:15:00Z", "value": 0.0},
+            {"timestamp": "2025-01-15T12:30:00Z", "value": 23.4},
+            {"timestamp": "2025-01-15T12:45:00Z", "value": 48.2},
+            {"timestamp": "2025-01-15T13:00:00Z", "value": 66.9},
+            {"timestamp": "2025-01-15T13:15:00Z", "value": 78.2},
+            {"timestamp": "2025-01-15T13:30:00Z", "value": 85.6},
+            {"timestamp": "2025-01-15T13:45:00Z", "value": 91.2},
+            {"timestamp": "2025-01-15T14:00:00Z", "value": 95.4}
+          ]
+        },
+        "cache_eviction_rate": {
+          "unit": "evictions_per_minute",
+          "threshold_warning": 100,
+          "threshold_critical": 500,
+          "data_points": [
+            {"timestamp": "2025-01-15T08:00:00Z", "value": 12},
+            {"timestamp": "2025-01-15T08:30:00Z", "value": 23},
+            {"timestamp": "2025-01-15T09:00:00Z", "value": 45},
+            {"timestamp": "2025-01-15T09:15:00Z", "value": 78},
+            {"timestamp": "2025-01-15T09:30:00Z", "value": 134},
+            {"timestamp": "2025-01-15T09:45:00Z", "value": 267},
+            {"timestamp": "2025-01-15T10:00:00Z", "value": 456},
+            {"timestamp": "2025-01-15T10:15:00Z", "value": 723},
+            {"timestamp": "2025-01-15T10:30:00Z", "value": 1123},
+            {"timestamp": "2025-01-15T10:45:00Z", "value": 1567},
+            {"timestamp": "2025-01-15T11:00:00Z", "value": 1834},
+            {"timestamp": "2025-01-15T11:15:00Z", "value": 1923},
+            {"timestamp": "2025-01-15T11:30:00Z", "value": 1756},
+            {"timestamp": "2025-01-15T11:45:00Z", "value": 1456},
+            {"timestamp": "2025-01-15T12:00:00Z", "value": 1234},
+            {"timestamp": "2025-01-15T12:15:00Z", "value": 967},
+            {"timestamp": "2025-01-15T12:30:00Z", "value": 634},
+            {"timestamp": "2025-01-15T12:45:00Z", "value": 423},
+            {"timestamp": "2025-01-15T13:00:00Z", "value": 267},
+            {"timestamp": "2025-01-15T13:15:00Z", "value": 156},
+            {"timestamp": "2025-01-15T13:30:00Z", "value": 89},
+            {"timestamp": "2025-01-15T13:45:00Z", "value": 45},
+            {"timestamp": "2025-01-15T14:00:00Z", "value": 23}
+          ]
+        }
+      }
+    },
+    "api_endpoint_performance": {
+      "description": "Performance metrics for key API endpoints",
+      "endpoints": {
+        "/api/facilities/search": {
+          "request_count": {
+            "data_points": [
+              {"timestamp": "2025-01-15T08:00:00Z", "value": 23},
+              {"timestamp": "2025-01-15T09:00:00Z", "value": 67},
+              {"timestamp": "2025-01-15T10:00:00Z", "value": 145},
+              {"timestamp": "2025-01-15T11:00:00Z", "value": 234},
+              {"timestamp": "2025-01-15T12:00:00Z", "value": 178},
+              {"timestamp": "2025-01-15T13:00:00Z", "value": 123},
+              {"timestamp": "2025-01-15T14:00:00Z", "value": 89}
+            ]
+          },
+          "error_rate": {
+            "unit": "percentage",
+            "data_points": [
+              {"timestamp": "2025-01-15T08:00:00Z", "value": 0.2},
+              {"timestamp": "2025-01-15T09:00:00Z", "value": 2.3},
+              {"timestamp": "2025-01-15T10:00:00Z", "value": 34.7},
+              {"timestamp": "2025-01-15T11:00:00Z", "value": 78.9},
+              {"timestamp": "2025-01-15T12:00:00Z", "value": 23.4},
+              {"timestamp": "2025-01-15T13:00:00Z", "value": 8.1},
+              {"timestamp": "2025-01-15T14:00:00Z", "value": 1.2}
+            ]
+          }
+        },
+        "/api/bookings": {
+          "request_count": {
+            "data_points": [
+              {"timestamp": "2025-01-15T08:00:00Z", "value": 12},
+              {"timestamp": "2025-01-15T09:00:00Z", "value": 23},
+              {"timestamp": "2025-01-15T10:00:00Z", "value": 34},
+              {"timestamp": "2025-01-15T11:00:00Z", "value": 8},
+              {"timestamp": "2025-01-15T12:00:00Z", "value": 45},
+              {"timestamp": "2025-01-15T13:00:00Z", "value": 56},
+              {"timestamp": "2025-01-15T14:00:00Z", "value": 67}
+            ]
+          },
+          "error_rate": {
+            "unit": "percentage",
+            "data_points": [
+              {"timestamp": "2025-01-15T08:00:00Z", "value": 0.0},
+              {"timestamp": "2025-01-15T09:00:00Z", "value": 0.0},
+              {"timestamp": "2025-01-15T10:00:00Z", "value": 2.9},
+              {"timestamp": "2025-01-15T11:00:00Z", "value": 62.5},
+              {"timestamp": "2025-01-15T12:00:00Z", "value": 0.0},
+              {"timestamp": "2025-01-15T13:00:00Z", "value": 0.0},
+              {"timestamp": "2025-01-15T14:00:00Z", "value": 0.0}
+            ]
+          }
+        }
+      }
+    },
+    "database_query_patterns": {
+      "description": "Analysis of database query performance patterns",
+      "slow_query_count": {
+        "unit": "queries_per_hour",
+        "threshold_warning": 10,
+        "threshold_critical": 50,
+        "data_points": [
+          {"timestamp": "2025-01-15T08:00:00Z", "value": 2},
+          {"timestamp": "2025-01-15T09:00:00Z", "value": 8},
+          {"timestamp": "2025-01-15T10:00:00Z", "value": 47},
+          {"timestamp": "2025-01-15T11:00:00Z", "value": 156},
+          {"timestamp": "2025-01-15T12:00:00Z", "value": 89},
+          {"timestamp": "2025-01-15T13:00:00Z", "value": 23},
+          {"timestamp": "2025-01-15T14:00:00Z", "value": 4}
+        ]
+      },
+      "query_complexity_score": {
+        "description": "Average complexity score of executed queries (1-10 scale)",
+        "unit": "score",
+        "data_points": [
+          {"timestamp": "2025-01-15T08:00:00Z", "value": 3.2},
+          {"timestamp": "2025-01-15T09:00:00Z", "value": 4.1},
+          {"timestamp": "2025-01-15T10:00:00Z", "value": 7.8},
+          {"timestamp": "2025-01-15T11:00:00Z", "value": 9.2},
+          {"timestamp": "2025-01-15T12:00:00Z", "value": 5.6},
+          {"timestamp": "2025-01-15T13:00:00Z", "value": 3.9},
+          {"timestamp": "2025-01-15T14:00:00Z", "value": 3.1}
+        ]
+      }
+    }
+  },
+  "alerts_triggered": [
+    {
+      "timestamp": "2025-01-15T09:15:33Z",
+      "severity": "warning",
+      "metric": "search_response_time",
+      "threshold_exceeded": "warning",
+      "value": 3222,
+      "threshold": 2000
+    },
+    {
+      "timestamp": "2025-01-15T09:30:23Z",
+      "severity": "critical",
+      "metric": "booking_success_rate",
+      "threshold_exceeded": "critical",
+      "value": 92.6,
+      "threshold": 95
+    },
+    {
+      "timestamp": "2025-01-15T09:45:33Z",
+      "severity": "critical",
+      "metric": "search_response_time",
+      "threshold_exceeded": "critical",
+      "value": 15666,
+      "threshold": 5000
+    },
+    {
+      "timestamp": "2025-01-15T10:35:12Z",
+      "severity": "critical",
+      "metric": "database_connection_pool",
+      "threshold_exceeded": "critical",
+      "value": 100,
+      "threshold": 80
+    },
+    {
+      "timestamp": "2025-01-15T11:00:12Z",
+      "severity": "critical",
+      "metric": "booking_success_rate",
+      "threshold_exceeded": "critical",
+      "value": 3.1,
+      "threshold": 85
+    }
+  ],
+  "system_health_summary": {
+    "overall_status": "recovered",
+    "incident_duration_minutes": 300,
+    "peak_impact_time": "2025-01-15T11:30:00Z",
+    "recovery_time": "2025-01-15T13:45:00Z",
+    "affected_users_estimated": 1247,
+    "bookings_lost_estimated": 89,
+    "revenue_impact_gbp": 1334.50
+  }
+}

@@ -1,0 +1,132 @@
+Social Media Monitoring Report - Community Booking System Incident
+Collection Period: 2025-01-15 09:00 - 14:30
+Platform Sources: Twitter, Facebook, NextDoor, Local Community Groups
+
+=== TWITTER MENTIONS ===
+
+@Twitter1 - 09:34 AM
+"Trying to book the sports hall for my morning fitness class but the council booking website is completely broken 😤 Been waiting 20 minutes and it's still loading... #CouncilFail #CommunityServices"
+Engagement: 23 likes, 8 retweets, 5 replies
+
+@Twitter2 - 09:52 AM  
+"PSA: Council community centre booking system is down. If you need to book venues urgently, try calling the facilities directly. System issues affecting multiple businesses today. #LocalBusiness #CouncilServices"
+Engagement: 45 likes, 67 retweets, 12 replies
+
+@Twitter3 - 10:18 AM
+"This is ridiculous! Been trying to book rehearsal space for my daughter's dance group for over an hour. The website keeps timing out. Performance is next month and we NEED practice space! @CouncilName sort this out! #DanceClass #BookingFail"
+Engagement: 67 likes, 23 retweets, 18 replies
+
+@Twitter4 - 10:35 AM
+"As an IT consultant, looking at the council booking site errors, this looks like a classic database performance issue. Connection timeouts, slow queries... someone needs to check their connection pooling! #TechSupport #DatabaseIssues"
+Engagement: 156 likes, 89 retweets, 34 replies
+
+@Twitter5 - 10:47 AM
+"Our weekly coffee morning for elderly residents can't be booked because the council website is broken. These social gatherings are vital for our members' wellbeing. Please fix this urgently @CouncilName #SeniorServices #CommunitySupport"
+Engagement: 234 likes, 123 retweets, 45 replies
+
+@Twitter6 - 11:15 AM
+"URGENT: We can't book the community hall for our fundraising event due to website issues. Sponsors are waiting for venue confirmation. This is affecting our ability to help local food banks! @CouncilName #CharityEvent #CommunitySupport"
+Engagement: 312 likes, 189 retweets, 67 replies
+
+@Twitter7 - 11:28 AM
+"Paid £15 for a sports hall booking but the website crashed and now I have no confirmation! Money taken but no booking. My son's birthday party is ruined! @CouncilName this is unacceptable! #PaymentIssue #BookingFail"
+Engagement: 445 likes, 267 retweets, 89 replies
+
+@CouncilName - 11:45 AM (OFFICIAL RESPONSE)
+"We are aware of technical issues with our community centre booking system and are working urgently to resolve them. We apologize for the inconvenience. For urgent bookings, please call facilities directly. Updates to follow."
+Engagement: 123 likes, 456 retweets, 234 replies
+
+@Twitter8 - 12:15 PM
+"BREAKING: Council booking system outage affecting hundreds of residents. Community groups, fitness classes, and business meetings disrupted. Full story on our website. #LocalNews #CouncilServices #TechOutage"
+Engagement: 567 likes, 789 retweets, 123 replies
+
+@Twitter9 - 13:30 PM
+"Just managed to complete my booking! Looks like the council has fixed the website issues. Thanks to the tech team for sorting it out 👍 #Fixed #CouncilServices #ThankYou"
+Engagement: 89 likes, 34 retweets, 12 replies
+
+@CouncilName - 14:00 PM (OFFICIAL UPDATE)
+"UPDATE: Our community centre booking system is now fully operational. We apologize for the disruption this morning. If you experienced payment issues, please contact our support team. Thank you for your patience."
+Engagement: 234 likes, 123 retweets, 45 replies
+
+=== FACEBOOK POSTS ===
+
+Riverside Community Centre User Group - 09:41 AM
+"Hi everyone, just a heads up that the online booking system seems to be having problems this morning. Several members have reported issues trying to book the sports hall and meeting rooms. Will update when we hear more from the council."
+Engagement: 67 likes, 23 comments, 45 shares
+
+Local Mums Network - 10:23 AM
+"Anyone else having trouble with the council booking website? I've been trying to book the community hall for our toddler group for ages and it keeps crashing. My little one's playgroup depends on this! 😢"
+Engagement: 134 likes, 78 comments, 23 shares
+
+Small Business Owners Network - 10:56 AM
+"The council booking system is down and it's affecting several of our members who need meeting rooms for client presentations today. This is costing us business! Has anyone found an alternative way to make urgent bookings?"
+Engagement: 89 likes, 56 comments, 34 shares
+
+Elderly Support Network - 11:19 AM
+"Our volunteers are struggling to book venues for this week's social activities for elderly residents. The website problems are having a real impact on our community's most vulnerable members. Please share alternative contact numbers if you have them."
+Engagement: 203 likes, 67 comments, 89 shares
+
+Council Name Official Page - 12:45 PM
+"We want to update residents on this morning's booking system issues. Our technical team has been working hard to resolve the problems and we're pleased to report that the system is now functioning normally again. We sincerely apologize for any inconvenience caused."
+Engagement: 445 likes, 123 comments, 67 shares
+
+=== NEXTDOOR POSTS ===
+
+Sarah Mitchell (Riverside Area) - 09:28 AM
+"Is anyone else having problems with the council's community centre booking website? I've been trying to book a sports hall for my fitness class but it won't load properly."
+Responses: 23 neighbors responded, 12 reported similar issues
+
+David Thompson (Central District) - 09:51 AM
+"URGENT - Does anyone have direct phone numbers for the community centres? The online booking system is completely broken and I need to book a room for a council consultation meeting tomorrow."
+Responses: 15 neighbors responded with various contact numbers
+
+Community Champion Mike (North Area) - 10:34 AM
+"For anyone affected by the booking system issues, I've spoken to the council and they're aware of the problem. They suggest calling facilities directly for urgent bookings. I'll post updates as I get them."
+Responses: 34 neighbors thanked him for the update
+
+Emma Johnson (West District) - 11:07 AM
+"The booking system problems are affecting our elderly residents' group meetings. These social gatherings are so important for combating isolation. Really hope this gets fixed soon."
+Responses: 28 neighbors expressed concern and offered support
+
+Neighborhood Helper Lisa (South Area) - 13:15 PM
+"Good news everyone - I just successfully booked a community hall through the website. Looks like the technical issues have been resolved!"
+Responses: 19 neighbors confirmed the system was working for them too
+
+=== LOCAL COMMUNITY GROUPS (WhatsApp/Telegram Excerpts) ===
+
+Fitness Instructors Network - 09:33 AM
+"Anyone else can't access the booking system? Three of my classes need venues this week and the website is dead 😫"
+
+Youth Sports League - 10:15 AM
+"Basketball practice cancelled - can't book the sports hall due to website issues. Kids are going to be so disappointed."
+
+Book Club Coordinators - 10:42 AM
+"Meeting room booking failed again. Website keeps timing out. Anyone know if this is affecting all council services?"
+
+Local Arts Groups - 11:23 AM
+"Drama rehearsal space booking impossible right now. Website completely unresponsive. Performance is in 3 weeks!"
+
+Community Volunteers - 12:30 PM
+"UPDATE: Just heard from council contact - they're working on database issues. Should be fixed soon."
+
+Fitness Instructors Network - 13:45 PM
+"SUCCESS! Just booked my venues for next week. System seems to be working normally again 🎉"
+
+=== SENTIMENT ANALYSIS SUMMARY ===
+
+Total Mentions Tracked: 47
+Peak Mention Time: 11:00-11:30 AM (15 mentions)
+Sentiment Breakdown:
+- Negative: 68% (32 mentions)
+- Neutral: 19% (9 mentions) 
+- Positive: 13% (6 mentions)
+
+Key Themes:
+1. Booking failures and website timeouts (23 mentions)
+2. Impact on community groups and elderly services (12 mentions)
+3. Business disruption and financial impact (8 mentions)
+4. Payment issues without confirmation (4 mentions)
+5. Appreciation for resolution efforts (6 mentions)
+
+Estimated Social Media Reach: 12,000+ residents
+Estimated Reputation Impact: Moderate negative, mitigated by quick resolution communication

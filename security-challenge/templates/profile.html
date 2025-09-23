@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vulnerable App - Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .profile { background: #f9f9f9; padding: 20px; margin: 20px 0; }
+        .nav { margin: 20px 0; }
+        .nav a { margin-right: 15px; text-decoration: none; }
+        .vulnerability-note { background: #ffe6e6; padding: 10px; margin: 10px 0; border: 1px solid #ff9999; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        
+        <div class="nav">
+            <a href="/">Login</a>
+            <a href="/register">Register</a>
+            <a href="/search">Search</a>
+            <a href="/upload">Upload</a>
+            <a href="/logout">Logout</a>
+        </div>
+
+        {% if user %}
+        <div class="profile">
+            <h2>Profile Information</h2>
+            <p><strong>ID:</strong> {{ user[0] }}</p>
+            <p><strong>Username:</strong> {{ user[1] }}</p>
+            <p><strong>Password:</strong> {{ user[2] }}</p>
+            <p><strong>Email:</strong> {{ user[3] }}</p>
+            <p><strong>Full Name:</strong> {{ user[4] }}</p>
+        </div>
+        {% endif %}
+
+        <div class="vulnerability-note">
+            <strong>Security Issue:</strong> This page is accessible without proper authentication!
+            <br>Try accessing: <code>/profile?user_id=1</code> or <code>/profile?user_id=2</code>
+        </div>
+    </div>
+</body>
+</html>
