@@ -59,7 +59,7 @@ Modern government digital services exhibit performance problems that require sop
 
 ## Source Materials: Community Centre Booking System Performance Incident
 
-**Investigation Materials Repository:** performance-incident-materials/
+**Investigation Materials Repository:** see the ```performance-challenge``` directory in this repo for everything you need.
 
 You will work with comprehensive performance investigation materials from a realistic government service outage representing common performance challenges found in local government digital services.
 
