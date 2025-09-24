@@ -59,24 +59,48 @@ Government departments use specialist security assessment tools like OWASP ZAPro
 
 ## Source Materials: Government Web Application with Security Vulnerabilities
 
-**GitHub Repository:** https://github.com/stevewalton28/vulnerable-gov-app
+**Application Repository:** `security-challenge/`
 
-You will work with a deliberately vulnerable government web application representing common security issues found in departmental digital services. This application includes:
+You will work with a deliberately vulnerable government web application in the `security-challenge/` folder representing common security issues found in departmental digital services. This application includes:
 
-### Application Characteristics
-- **Citizen service interface:** Mock government service for benefit application processing
+### Application Characteristics (`security-challenge/`)
+The vulnerable Flask application includes:
+- **Citizen service interface:** Mock government service with login, registration, and user profiles
 - **Authentication system:** User login and session management with multiple security flaws
-- **Data handling:** Personal information processing with various input validation failures
-- **File upload functionality:** Document submission features with insufficient security controls
-- **Database integration:** Data persistence with SQL injection and other database security issues
-- **Admin interface:** Administrative functions with authorization and access control problems
+- **Data handling:** User data processing with various input validation failures
+- **File upload functionality:** Document upload features with insufficient security controls
+- **Database integration:** SQLite database with SQL injection and other security issues
+- **Search functionality:** Search features vulnerable to Cross-Site Scripting (XSS)
 
-### Pre-Generated Security Scan Results
-The repository includes comprehensive OWASP ZAProxy scan results showing:
-- **High-risk vulnerabilities:** SQL injection, XSS, authentication bypass, file upload vulnerabilities
-- **Medium-risk issues:** Session management problems, information disclosure, insufficient access controls  
-- **Low-risk findings:** Security headers missing, information leakage, configuration weaknesses
-- **False positive examples:** Issues flagged by automated tools that may not represent actual security risks
+### Security Vulnerabilities Present
+The `security-challenge/` application contains these intentional vulnerabilities:
+- **SQL Injection:** In login forms using string concatenation
+- **Cross-Site Scripting (XSS):** In search functionality without input escaping
+- **Missing Authentication:** Direct URL access to protected resources
+- **Unrestricted File Upload:** No file type or size validation
+- **Missing Security Headers:** No X-Frame-Options, CSP, HSTS, etc.
+- **Session Management Issues:** Weak session handling and authorization
+
+### Application Structure (`security-challenge/`)
+- **`app.py`** - Main Flask application with vulnerable endpoints
+- **`requirements.txt`** - Python dependencies for the application
+- **`templates/`** - HTML templates for login, profile, search, upload pages
+- **`vulnerable_app.db`** - SQLite database with test user accounts
+- **`README.md`** - Application overview and vulnerability descriptions
+
+### Getting Started with the Security Challenge
+To run the vulnerable application:
+```bash
+cd security-challenge/
+pip install flask
+python app.py
+```
+Then visit: http://localhost:5001
+
+Test accounts available:
+- admin / admin123
+- user1 / password
+- test / test
 
 ## Supporting Resources
 
@@ -131,32 +155,32 @@ production-ready, secure applications."
 Once you understand your remediation approach, systematically address all identified vulnerabilities:
 
 ```
-"You are systematically remediating security vulnerabilities identified by OWASP ZAProxy 
-in a government web application from this repository: https://github.com/stevewalton28/vulnerable-gov-app
+"You are systematically remediating security vulnerabilities in the vulnerable Flask
+application located in the `security-challenge/` folder.
 
-I have comprehensive ZAProxy scan results showing multiple security issues that need 
-systematic remediation whilst maintaining full application functionality.
+This government web application contains multiple security issues that need systematic
+remediation whilst maintaining full application functionality.
 
 SECURITY REMEDIATION REQUIREMENTS:
-Based on the ZAProxy scan results, systematically address:
+Based on the vulnerabilities present in the `security-challenge/` application, systematically address:
 
 HIGH-RISK VULNERABILITIES (immediate priority):
-- SQL injection vulnerabilities in database query handling
-- Cross-site scripting (XSS) issues in user input processing  
-- Authentication bypass vulnerabilities in login systems
-- File upload vulnerabilities allowing malicious file execution
-- Authorization failures enabling privilege escalation
+- SQL injection vulnerabilities in login endpoint (`/login`) using string concatenation
+- Cross-site scripting (XSS) issues in search functionality (`/search`) without input escaping
+- Missing authentication allowing direct access to protected resources (`/profile`)
+- Unrestricted file upload vulnerabilities in upload endpoint (`/upload`)
+- Authorization failures enabling unauthorized user data access
 
 MEDIUM-RISK VULNERABILITIES:
-- Session management weaknesses enabling session hijacking
+- Session management weaknesses with inadequate session validation
 - Information disclosure through error messages and system information
-- Insufficient access controls allowing unauthorised resource access
-- Cross-site request forgery (CSRF) vulnerabilities in form processing
+- Insufficient access controls allowing unauthorized resource access
+- Missing CSRF protection in form processing
 
 LOW-RISK CONFIGURATION ISSUES:
-- Missing security headers (CSP, HSTS, X-Frame-Options)
+- Missing security headers (X-Frame-Options, CSP, HSTS, etc.)
 - Information leakage through verbose error messages
-- Insecure configuration settings and default credentials
+- Insecure default configuration settings
 
 GOVERNMENT SECURITY CONTEXT:
 - This application handles citizen personal data requiring enhanced protection
