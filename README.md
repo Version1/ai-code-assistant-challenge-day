@@ -72,6 +72,7 @@ While tool-agnostic in approach, the workshop focuses on:
 ## Additional Tools Available 
 - **Example Government AI SDLC MCP Server**: 
 - **Example Government Standards MCP Server**:
+- **Spec-Kit**: [Github Spec-Kit](https://github.com/github/spec-kit)
 
 **Ready to begin?** Start with the [Setup Guides](setup-guides/) to configure your AI development tools for the workshop.
 
