@@ -69,6 +69,4 @@ While tool-agnostic in approach, the workshop focuses on:
 - **Example Government Standards MCP Server**: [https://github.com/Version1/uk-gov-tech-standards-mcp](https://github.com/Version1/uk-gov-tech-standards-mcp)
 - **Spec-Kit**: [Github Spec-Kit](https://github.com/github/spec-kit)
 
-**Ready to begin?** Start with the [Setup Guides](setup-guides/) to configure your AI development tools for the workshop.
-
 *This repository serves as both a workshop resource and a long-term reference for AI-assisted development in government contexts. We hope it provides lasting value for your teams and projects!*
