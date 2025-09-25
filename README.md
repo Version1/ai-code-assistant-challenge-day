@@ -10,11 +10,6 @@ Welcome to the Head of Engineering Challenge Workshop. This event has been pulle
 - **Collaborative Problem Solving**: Team-based challenges tackling real government service scenarios
 - **Knowledge Transfer**: Create lasting resources for continued AI-assisted development across departments
 
-## Quick Navigation
-
-### Getting Started
-- **[Setup Guides](setup-guides/)** - Tool installation and configuration for government networks
-
 ### Challenge System
 - **[10-Level Challenge System](challenges/)** - Progressive challenges from Level 1 to Level 10
 - **Level 1-3**: Foundation challenges (Digital transformation, data processing, data modeling)
