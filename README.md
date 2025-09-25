@@ -70,8 +70,8 @@ While tool-agnostic in approach, the workshop focuses on:
 - **Cursor**: AI-first development environment
 
 ## Additional Tools Available 
-- **Example Government AI SDLC MCP Server**: 
-- **Example Government Standards MCP Server**:
+- **Example Government AI SDLC MCP Server**: [https://github.com/Version1/uk-gov-example-ai-sdlc](https://github.com/Version1/uk-gov-example-ai-sdlc)
+- **Example Government Standards MCP Server**: [https://github.com/Version1/uk-gov-tech-standards-mcp](https://github.com/Version1/uk-gov-tech-standards-mcp)
 - **Spec-Kit**: [Github Spec-Kit](https://github.com/github/spec-kit)
 
 **Ready to begin?** Start with the [Setup Guides](setup-guides/) to configure your AI development tools for the workshop.
