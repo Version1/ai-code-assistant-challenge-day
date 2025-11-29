@@ -1,1 +1,77 @@
-*DS_Store*
+# OS files
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-log.txt
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm/
+
+# Testing and coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
+
+# Logs
+*.log
+logs/
+!performance-challenge/logs/
+
+# Local AI tool configurations
+# (Keep challenge-provided .claude and .kiro examples, ignore user-generated ones)
+.claude/
+.kiro/
+!level-*/.claude/
+!level-*/.kiro/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+tmp/
+
+# Database files created during testing
+*.db
+!security-challenge/vulnerable_app.db
+
+# Build outputs
+*.min.js
+*.min.css

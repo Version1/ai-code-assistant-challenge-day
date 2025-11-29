@@ -11,25 +11,30 @@ Welcome to the AI Code Assistant (AICA) Gameday challenges. This event has been 
 - **Knowledge Transfer**: Create lasting resources for continued AI-assisted development across departments
 
 ### Challenge System
-- **[10-Level Challenge System](challenges/)** - Progressive challenges from Level 1 to Level 10
+- **10-Level Challenge System** - Progressive challenges from Level 1 to Level 10
 - **Level 1-3**: Foundation challenges (Digital transformation, data processing, data modeling)
 - **Level 4-6**: Intermediate challenges (Legacy modernization, business logic, security)
 - **Level 7-10**: Advanced challenges (Performance, testing, architecture, production deployment)
+
+Each challenge directory contains:
+- `challenge-summary.md` - What the challenge is and why it matters
+- `playbook-claude-code.md` - Getting started guide for Claude Code users
+- `playbook-aws-kiro.md` - Getting started guide for AWS Kiro users
 
 #### Challenge Table
 
 | Challenge Name | Difficulty Level |
 |----------------|------------------|
-| [PDF to Digital Service Transformation](level-01.md) | Level 1 |
-| [Data Processing & Visualisation](level-02.md) | Level 2 |
-| [Database-Backed CRUD Operations](level-03.md) | Level 3 |
-| [Legacy Code Modernisation](level-04.md) | Level 4 |
-| [Complex Business Logic Implementation](level-05.md) | Level 5 |
-| [Security Vulnerability Assessment & Remediation](level-06.md) | Level 6 |
-| [Performance Investigation & System Resilience](level-07.md) | Level 7 |
-| [Adaptive Testing Strategy & Risk-Based Quality Engineering](level-08.md) | Level 8 |
-| [Multi-Service Architecture Design](level-09.md) | Level 9 |
-| [Production Deployment & Incident Response](level-10.md) | Level 10 |
+| [PDF to Digital Service Transformation](level-01/) | Level 1 |
+| [Data Processing & Visualisation](level-02/) | Level 2 |
+| [Database-Backed CRUD Operations](level-03/) | Level 3 |
+| [Legacy Code Modernisation](level-04/) | Level 4 |
+| [Complex Business Logic Implementation](level-05/) | Level 5 |
+| [Security Vulnerability Assessment & Remediation](level-06/) | Level 6 |
+| [Performance Investigation & System Resilience](level-07/) | Level 7 |
+| [Adaptive Testing Strategy & Risk-Based Quality Engineering](level-08/) | Level 8 |
+| [Multi-Service Architecture Design](level-09/) | Level 9 |
+| [Production Deployment & Incident Response](level-10/) | Level 10 |
 
 
 ## Gameday Schedule
@@ -58,11 +63,17 @@ All materials in this repository consider public sector requirements:
 ## Supported AI Tools
 
 While tool-agnostic in approach, the workshop focuses on:
+- **Claude Code**: Anthropic's development-focused AI assistant
 - **Amazon Kiro**: AI-powered development assistant
-- **Claude Code** Anthropic's development-focused AI assistant
 - **Amazon Q Developer**: AWS-integrated development assistant (formerly CodeWhisperer)
 - **GitHub Copilot**: Traditional IDE-integrated assistance, with "agent" mode
 - **Cursor**: AI-first development environment
+
+### Getting Started Guides
+
+New to these tools? Start here:
+- **[Getting Started with Claude Code](getting-started-claude-code.md)** - Introduction for newcomers
+- **[Getting Started with AWS Kiro](getting-started-aws-kiro.md)** - Introduction for newcomers
 
 ## Additional Tools Available 
 We've open sourced some other tools that you can connect to these code assistants to help you work and to give some deeper compliance support for UK governement specific standards:
