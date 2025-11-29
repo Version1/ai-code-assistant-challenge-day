@@ -132,6 +132,46 @@ Hooks in `.kiro/hooks/` trigger on events like file save or commit. Use them to:
 - Execute tests
 - Update documentation
 
+### MCP servers
+
+Model Context Protocol (MCP) servers extend Kiro with additional capabilities - database access, external APIs, specialised tools. Kiro supports MCP alongside agents and hooks.
+
+Configure MCP servers in `.kiro/settings/mcp.json` (workspace-level) or `~/.kiro/settings/mcp.json` (user-level):
+
+```json
+{
+  "mcpServers": {
+    "server-name": {
+      "command": "npx",
+      "args": ["-y", "@your-org/mcp-server"],
+      "env": {
+        "API_KEY": "${API_KEY}"
+      }
+    }
+  }
+}
+```
+
+Access MCP configuration through:
+- **Command Palette**: Cmd+Shift+P (Mac) or Ctrl+Shift+P (Windows/Linux), search "MCP"
+- **Kiro Panel**: Select the "Open MCP Config" icon
+
+#### UK Government MCP servers
+
+Two MCP servers are available for UK public sector challenges:
+
+**Government AI SDLC** - Provides guidance on secure development lifecycle practices for government projects:
+
+Repository: https://github.com/Version1/uk-gov-example-ai-sdlc
+
+**Government Tech Standards** - Provides access to UK government technology standards and compliance requirements:
+
+Repository: https://github.com/Version1/uk-gov-tech-standards-mcp
+
+Follow the setup instructions in each repository's README to configure the servers for your environment.
+
+For more on MCP configuration, see the official documentation: https://kiro.dev/docs/mcp/configuration/
+
 ## Tips for effective use
 
 ### Invest in steering files
@@ -158,8 +198,9 @@ Steering files are living documents. Update them as you establish patterns, chan
 
 ### Documentation
 
-- **Official docs**: kiro.dev/docs
-- **Quick start**: kiro.dev/docs/getting-started
+- **Official docs**: https://kiro.dev/docs
+- **Quick start**: https://kiro.dev/docs/getting-started
+- **MCP configuration**: https://kiro.dev/docs/mcp/configuration/
 
 ### Within Kiro
 

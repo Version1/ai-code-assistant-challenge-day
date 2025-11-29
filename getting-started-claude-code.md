@@ -149,18 +149,44 @@ Model Context Protocol (MCP) servers extend Claude Code with additional capabili
 ```json
 {
   "mcpServers": {
-    "database": {
+    "server-name": {
       "command": "npx",
-      "args": ["-y", "@your-org/db-mcp-server"],
+      "args": ["-y", "@your-org/mcp-server"],
       "env": {
-        "DATABASE_URL": "your-connection-string"
+        "API_KEY": "your-key"
       }
     }
   }
 }
 ```
 
-Your organisation may provide MCP servers for specific tools or standards. Ask your workshop facilitators what is available.
+#### UK Government MCP servers
+
+Two MCP servers are available for UK public sector challenges:
+
+**Government AI SDLC** - Provides guidance on secure development lifecycle practices for government projects:
+
+```json
+{
+  "mcpServers": {
+    "gov-sdlc": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-fetch"],
+      "env": {}
+    }
+  }
+}
+```
+
+Repository: https://github.com/Version1/uk-gov-example-ai-sdlc
+
+**Government Tech Standards** - Provides access to UK government technology standards and compliance requirements:
+
+Repository: https://github.com/Version1/uk-gov-tech-standards-mcp
+
+Follow the setup instructions in each repository's README to configure the servers for your environment.
+
+For more on MCP configuration, see the official documentation: https://docs.anthropic.com/en/docs/claude-code/mcp
 
 ### Permissions
 
@@ -234,6 +260,7 @@ Start sessions by asking Claude Code to read and confirm it understands the CLAU
 
 - **Official docs**: https://docs.anthropic.com/en/docs/claude-code
 - **Quickstart**: https://docs.anthropic.com/en/docs/claude-code/quickstart
+- **MCP configuration**: https://docs.anthropic.com/en/docs/claude-code/mcp
 
 ### Within Claude Code
 
