@@ -10,6 +10,8 @@ Welcome to the AI Code Assistant (AICA) Gameday challenges. This event has been 
 - **Collaborative Problem Solving**: Team-based challenges tackling real government service scenarios
 - **Knowledge Transfer**: Create lasting resources for continued AI-assisted development across departments
 
+New to AI coding assistants? See the **[Glossary](glossary.md)** for explanations of key terms like agents, MCP, hooks, and more.
+
 ### Challenge System
 - **10-Level Challenge System** - Progressive challenges from Level 1 to Level 10
 - **Level 1-3**: Foundation challenges (Digital transformation, data processing, data modeling)
