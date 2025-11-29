@@ -1,11 +1,11 @@
-# UK Government Head of Engineering AI Workshop
+# AI Code Assistant Gameday for UK Public Sector teams
 
-Welcome to the Head of Engineering Challenge Workshop. This event has been pulled together to provide practical AI coding existing experience through progressive challenge based learning, working in teams of 2-3, focusing on real-world government service development scenarios.
+Welcome to the AI Code Assistant (AICA) Gameday challenges. This event has been pulled together to provide practical AI coding existing experience through progressive challenge based learning, working in teams of 2-3, focusing on real-world government delivery scenarios.
 
 ## Workshop Objectives
 
 - **Challenge-Based Learning**: Progressive 10-level challenge system with increasing difficulty and scoring
-- **Practical AI Experience**: Hands-on experience with modern AI development tools including Claude Code, Kiro/Q Developer, and others
+- **Practical AI Experience**: Hands-on experience with modern AI development tools (we've included guides for Claude Code and Amazon Kiro - these challenges work for any AICA, and we'll add more guides for more tools in the near future)
 - **Production-Ready Practices**: Focus on maintainable, scalable, and secure solutions suitable for government services
 - **Collaborative Problem Solving**: Team-based challenges tackling real government service scenarios
 - **Knowledge Transfer**: Create lasting resources for continued AI-assisted development across departments
@@ -32,9 +32,9 @@ Welcome to the Head of Engineering Challenge Workshop. This event has been pulle
 | [Production Deployment & Incident Response](level-10.md) | Level 10 |
 
 
-## Workshop Schedule
+## Gameday Schedule
 
-### AI-Native Government Development Challenge
+### The schedule
 
 | Time | Session | Summary |
 |------|---------|---------|
@@ -46,7 +46,7 @@ Welcome to the Head of Engineering Challenge Workshop. This event has been pulle
 | 15:30-16:15 | Group Feedback & Scoreboard Review | Collaborative discussion on tool effectiveness, successful approaches, prompting strategies, key insights, challenge completion scoring, and peer recognition with awards |
 | 16:15-16:30 | Wrap-Up & Next Steps | Summary of collective learnings, resources for continued development, event conclusion |
 
-## Government Context
+## Context
 
 All materials in this repository consider public sector requirements:
 - **Security**: Government security standards and data protection requirements
@@ -58,15 +58,19 @@ All materials in this repository consider public sector requirements:
 ## Supported AI Tools
 
 While tool-agnostic in approach, the workshop focuses on:
+- **Amazon Kiro**: AI-powered development assistant
 - **Claude Code** Anthropic's development-focused AI assistant
 - **Amazon Q Developer**: AWS-integrated development assistant (formerly CodeWhisperer)
-- **Kiro**: AI-powered development assistant
-- **GitHub Copilot**: Traditional IDE-integrated assistance
+- **GitHub Copilot**: Traditional IDE-integrated assistance, with "agent" mode
 - **Cursor**: AI-first development environment
 
 ## Additional Tools Available 
+We've open sourced some other tools that you can connect to these code assistants to help you work and to give some deeper compliance support for UK governement specific standards:
+
 - **Example Government AI SDLC MCP Server**: [https://github.com/Version1/uk-gov-example-ai-sdlc](https://github.com/Version1/uk-gov-example-ai-sdlc)
 - **Example Government Standards MCP Server**: [https://github.com/Version1/uk-gov-tech-standards-mcp](https://github.com/Version1/uk-gov-tech-standards-mcp)
+
+Amazon Kiro is spec-driven by default, to use a spec-driven approach in the other tools, consider this open source framework that works with all major AICA:
 - **Spec-Kit**: [Github Spec-Kit](https://github.com/github/spec-kit)
 
 *This repository serves as both a workshop resource and a long-term reference for AI-assisted development in government contexts. We hope it provides lasting value for your teams and projects!*
