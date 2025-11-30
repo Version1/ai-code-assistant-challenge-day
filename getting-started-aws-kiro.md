@@ -28,7 +28,7 @@ Specs are structured documents that capture requirements, design decisions, and 
 
 ### Agents and hooks automate expertise
 
-Agents are specialised AI personas for specific tasks (security review, accessibility audit). Hooks are event-driven triggers that automate repetitive workflows (format on save, run tests on commit).
+Agents are specialised AI personas for specific tasks (security review, accessibility audit). Hooks are event-driven triggers that automate repetitive workflows (format on save, run tests on file edit).
 
 ## Essential setup
 
@@ -36,7 +36,7 @@ Complete these steps before your first coding session:
 
 ### 1. Install Kiro
 
-Download and install from kiro.dev. It runs as a standalone IDE based on VS Code.
+Download and install from https://kiro.dev/downloads/. It runs as a standalone IDE based on VS Code.
 
 ### 2. Open your project
 
@@ -63,15 +63,43 @@ project/
 
 Start with these three files in `.kiro/steering/`:
 
-**product.md** - What your product does, who it serves, core features
+**product.md** - What your product does, who it serves, core features. Include:
+- Product name and one-sentence purpose
+- Who your target users are
+- Core features and capabilities
+- How you measure success
 
-**tech.md** - Languages, frameworks, coding standards, testing approach
+**tech.md** - Languages, frameworks, coding standards, testing approach. Include:
+- Languages and frameworks you use
+- Testing approach (unit tests, integration tests, what coverage you expect)
+- Coding standards (naming conventions, file organisation)
+- Key dependencies and why you chose them
 
 **structure.md** - Key directories, important files, architectural patterns
 
 Ten minutes here saves hours later. Kiro reads these files to understand your project context.
 
+Steering files have three inclusion modes:
+- **always** (default) - loaded on every interaction
+- **fileMatch** - only loaded when working with files matching a pattern
+- **manual** - only loaded when you explicitly reference the file with #filename
+
+Set the mode in your file's frontmatter. Most steering files should use `always`.
+
 ## Core workflow
+
+### Opening the chat panel and choosing your mode
+
+Open the chat panel with **Cmd+L** (Mac) or **Ctrl+L** (Windows/Linux).
+
+When starting a new session, the **session picker** lets you choose between Vibe Mode and Spec Mode. Pick the mode that matches your task complexity.
+
+In the bottom-right corner of the chat panel, you will find the **Autopilot/Supervised toggle**:
+
+- **Autopilot** - Kiro works through tasks autonomously, making decisions and implementing changes without pausing for approval at each step
+- **Supervised** - Kiro pauses for your approval before making changes, giving you more control over the process
+
+Start with Supervised mode while you learn how Kiro works. Graduate to Autopilot once you trust the outputs and want faster iteration.
 
 ### Vibe Mode - for quick tasks
 
@@ -79,6 +107,8 @@ Ten minutes here saves hours later. Kiro reads these files to understand your pr
 2. Describe what you want
 3. Let Kiro code
 4. Review and iterate
+
+Vibe Mode is not "dumb mode". Kiro still uses your steering files and understands your project context. The difference from Spec Mode is workflow structure, not capability. You get the same intelligent assistance without the requirements-design-tasks documentation.
 
 Use for: bug fixes, small features, exploring ideas, learning a codebase.
 
@@ -89,6 +119,10 @@ Use for: bug fixes, small features, exploring ideas, learning a codebase.
 3. Kiro generates a Design document - review and edit
 4. Kiro generates a Task list with checkboxes
 5. Work through tasks, ticking them off as you go
+
+Requirements use the EARS format (Easy Approach to Requirements Syntax). You will see requirements written as: "WHEN [condition] THE SYSTEM SHALL [behaviour]". This structured format helps Kiro generate clear, testable requirements.
+
+Each phase requires your approval before Kiro proceeds to the next. You can edit the generated specs at any point - they are working documents, not locked outputs.
 
 Use for: new features, refactoring, anything that affects multiple files or needs documentation.
 
@@ -123,18 +157,62 @@ Agents in `.kiro/agents/` are custom AI personas with specific expertise. Create
 - Performance analysis
 - Code review against your standards
 
+Kiro includes several built-in agents:
+
+- **kiro_default** - The default agent used for new sessions. This handles general coding tasks and is what you interact with unless you specify otherwise.
+- **Auto agent** - Dynamically chooses the optimal model for each task based on complexity and requirements. Useful when you want Kiro to balance speed and capability automatically.
+
+Agent configuration files use JSON format. Store them at `~/.kiro/agents/<agent-name>.json` for user-level agents or `.kiro/agents/<agent-name>.json` for project-level agents:
+
+```json
+{
+  "name": "security-reviewer",
+  "description": "Reviews code for security vulnerabilities",
+  "prompt": "You are a security expert. Review code for injection flaws, auth issues, and data exposure risks.",
+  "tools": ["read", "write"],
+  "model": "claude-sonnet-4"
+}
+```
+
 ### Hooks - automation
 
-Hooks in `.kiro/hooks/` trigger on events like file save or commit. Use them to:
+Hooks in `.kiro/hooks/` trigger on file events. Available event types are:
+
+- **fileEdit** - when a file is saved
+- **fileCreate** - when a new file is created
+- **fileDelete** - when a file is deleted
+- **userTriggered** - manual trigger
+
+Use hooks to:
 
 - Auto-format code
 - Run linting
 - Execute tests
 - Update documentation
 
+Hook configuration files use YAML format. Store them at `.kiro/hooks/<hook-name>.yaml`:
+
+```yaml
+name: "lint-on-save"
+description: "Runs linting when TypeScript files are saved"
+version: "1"
+
+when:
+  type: "fileEdit"
+  patterns:
+    - "**/*.ts"
+    - "!**/node_modules/**"
+
+then:
+  type: "askAgent"
+  prompt: "Check this file for linting issues and suggest fixes"
+```
+
 ### MCP servers
 
 Model Context Protocol (MCP) servers extend Kiro with additional capabilities - database access, external APIs, specialised tools. Kiro supports MCP alongside agents and hooks.
+
+Kiro includes a built-in **fetch** MCP server for retrieving web content. This is disabled by default - enable it in your MCP configuration if you need web fetching capabilities.
 
 Configure MCP servers in `.kiro/settings/mcp.json` (workspace-level) or `~/.kiro/settings/mcp.json` (user-level):
 
@@ -199,8 +277,9 @@ Steering files are living documents. Update them as you establish patterns, chan
 ### Documentation
 
 - **Official docs**: https://kiro.dev/docs
-- **Quick start**: https://kiro.dev/docs/getting-started
+- **Getting started**: https://kiro.dev/docs/getting-started/installation/
 - **MCP configuration**: https://kiro.dev/docs/mcp/configuration/
+- **Hooks**: https://kiro.dev/docs/hooks/types/
 
 ### Within Kiro
 
