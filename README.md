@@ -77,6 +77,14 @@ New to these tools? Start here:
 - **[Getting Started with Claude Code](getting-started-claude-code.md)** - Introduction for newcomers
 - **[Getting Started with AWS Kiro](getting-started-aws-kiro.md)** - Introduction for newcomers
 
+### Agentic AI Guides
+
+Ready to go beyond prompt-and-response? These guides cover autonomous agent configuration — where your AI tool orchestrates specialist agents, runs tasks in parallel, and works independently on complex goals.
+
+- **[Agentic AI guide](agentic-ai-guide.md)** - What agentic workloads are and when to use them (start here)
+- **[Autonomous agents with Claude Code](getting-started-agentic-claude-code.md)** - Sub-agents, parallel execution, headless mode, and orchestration patterns
+- **[Autonomous agents with AWS Kiro](getting-started-agentic-aws-kiro.md)** - Custom agents, hooks-driven automation, Kiro CLI, and the autonomous agent
+
 ## Additional Tools Available 
 We've open sourced some other tools that you can connect to these code assistants to help you work and to give some deeper compliance support for UK governement specific standards:
 
